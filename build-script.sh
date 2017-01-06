@@ -31,13 +31,13 @@ export CGI_TMP_DIR=$CGI_DATA_DIR/tmp
 export CGI_CACHE_DIR=$CGI_DATA_DIR/cache
 export WWW_DIR=/var/www/html
 
-mkdir -p $BUILD_ROOT \
-  && mkdir -p $CGI_DIR \
-  && mkdir -p $CGI_DATA_DIR \
-  && mkdir -p $CGI_TMP_DIR \
-  && mkdir -p $CGI_CACHE_DIR \
-  && ln -s /usr/lib/x86_64-linux-gnu /usr/lib64
-
+# should build already there from base
+# mkdir -p $BUILD_ROOT \
+#   && mkdir -p $CGI_DIR \
+#   && mkdir -p $CGI_DATA_DIR \
+#   && mkdir -p $CGI_TMP_DIR \
+#   && mkdir -p $CGI_CACHE_DIR \
+#   && ln -s /usr/lib/x86_64-linux-gnu /usr/lib64
 
 # get ITK
 # http://www.itk.org/Wiki/ITK_Configuring_and_Building_for_Ubuntu_Linux
